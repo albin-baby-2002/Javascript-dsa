@@ -25,8 +25,8 @@ Function.prototype.customBind = function (context, ...arguments) {
 
   context[key] = this;
 
-  return () => {
-    context[key](...arguments);
+  return (...extraArguments) => {
+    context[key](...arguments,...extraArguments);
   };
 };
 
