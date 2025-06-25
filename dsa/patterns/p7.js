@@ -26,3 +26,20 @@ for (let i = 0; i < length; i++) {
   }
   console.log(str);
 }
+
+for (let i = 0; i < length; i++) {
+  let str = '';
+  let item;
+
+
+  for (let j = 0; j <= i; j++) {
+
+    if (j%2 ) {
+      item = 0
+    } else {
+      item = 1
+    }
+  }
+  console.log(str);
+}
+
